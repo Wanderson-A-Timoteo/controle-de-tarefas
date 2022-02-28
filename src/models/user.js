@@ -35,6 +35,7 @@ class User extends Model {
 
   static associate(models) {
     this.hasMany(models.Project);
+    this.hasMany(models.Task);
   }
 }
 
