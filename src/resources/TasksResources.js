@@ -1,5 +1,8 @@
+import * as path from "path";
 import AdminJS from "adminjs";
 import Task from "../models/task";
+import uploadFeature from "@adminjs/upload";
+import credentials from "../config/credentials";
 
 export default {
     resource: Task,
@@ -83,12 +86,62 @@ export default {
                     edit: false
                 },
             },
+            attachment: {
+                position: 12,
+            },
             user_id: {
                 isVisible: false,
             },
             project_id: {
                 isVisible: false,
             },
+            path: {
+                isVisible: false,
+            },
+            folder: {
+                isVisible: false,
+            },
+            type: {
+                isVisible: false,
+            },
+            filename: {
+                isVisible: false,
+            },
+            size: {
+                isVisible: false,
+            },
         },
     },
+    features: [
+        uploadFeature({
+            provider: {
+                //aws: credentials,
+                local: {
+                    bucket: path.join(__dirname, "../../uploads"),
+                },
+            },
+            properties: {
+                kek: "path",
+                bucket: "folder",
+                mimeType: "type",
+                size: "size",
+                filename: "filename",
+                file: "attachment",
+            },
+            validation: {
+                mimeTypes: [
+                    "image/png",
+                    "application/pdf",
+                    "application/zip",
+                    "image/gif",
+                    "image/jpeg",
+                    "application/xml",
+                    "audio/*",
+                    "video/mp4",
+                    "image/svg+xml",
+                ],
+                maxSize: 5 * 1024 * 1024,
+            },
+        }),
+    ],
 };
