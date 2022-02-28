@@ -17,7 +17,16 @@ export default {
       password: 'Senha',
       passwordHash: 'Senha criptografada',
       role: 'Perfil',
-      ...commonProps
+      ...commonProps,
+    },
+  },
+  projects: {
+    properties: {
+      id: 'ID',
+      name: 'Nome',
+      description: 'Descrição',
+      userId: "Responsável",
+      ...commonProps,
     },
   },
 };

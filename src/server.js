@@ -6,6 +6,7 @@ import AdminJSSequelize from "@adminjs/sequelize";
 import express from 'express';
 import UsersResource from './resources/UsersResources';
 import locale from './locales';
+import ProjectResources from "./resources/ProjectsResources";
 
 AdminJS.registerAdapter(AdminJSSequelize);
 
@@ -14,7 +15,7 @@ const app = express();
 const adminJS = new AdminJS({
     database: [],
     rootPath: '/admin',
-    resources: [UsersResource],
+    resources: [UsersResource, ProjectResources],
     ...locale,
 });
 
