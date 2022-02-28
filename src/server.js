@@ -16,6 +16,9 @@ const app = express();
 const adminJS = new AdminJS({
     database: [],
     rootPath: '/admin',
+    dashboard: {
+        component: AdminJS.bundle("./components/Dashboard/index"), // Substitui o dashboard padrão pelo compomente dashboard que criamos
+    },
     resources: [UsersResource, ProjectResources, TasksResources],
     ...locale,
 });

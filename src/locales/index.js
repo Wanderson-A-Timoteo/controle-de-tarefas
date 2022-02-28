@@ -2,7 +2,7 @@ import labels from "./labels";
 import resources from "./resources";
 
 const commonProps = {
-  status: 'Situação',
+  status: 'Prazo de entrega',
   createdAt: 'Criação',
   updatedAt: 'Atualização'
 };

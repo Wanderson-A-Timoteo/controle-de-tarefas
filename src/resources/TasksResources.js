@@ -46,11 +46,11 @@ export default {
                 position: 7,
                 isRequired: true,
                 availableValues: [
-                    { value: "backlog", label: "Backlog" },
-                    { value: "doing", label: "Em Execução" },
-                    { value: "done", label: "Pronto" },
-                    { value: "approved", label: "Aprovado" },
-                    { value: "rejected", label: "Rejeitado" },
+                    { value: "backlog", label: "Diária" },
+                    { value: "doing", label: "Semanal" },
+                    { value: "done", label: "Quinzenal" },
+                    { value: "approved", label: "Mensal" },
+                    { value: "rejected", label: "Trimestral" },
                 ],
             },
             projectId: {
