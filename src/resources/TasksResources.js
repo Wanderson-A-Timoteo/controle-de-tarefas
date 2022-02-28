@@ -1,4 +1,4 @@
-import * as path from "path";
+//import * as path from "path"; // Para salvar uplods local
 import AdminJS from "adminjs";
 import Task from "../models/task";
 import uploadFeature from "@adminjs/upload";
@@ -115,10 +115,10 @@ export default {
     features: [
         uploadFeature({
             provider: {
-                //aws: credentials,
-                local: {
-                    bucket: path.join(__dirname, "../../uploads"),
-                },
+                aws: credentials,
+                // local: {
+                //     bucket: path.join(__dirname, "../../uploads"),
+                // },
             },
             properties: {
                 key: "path",
