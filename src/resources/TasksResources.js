@@ -121,7 +121,7 @@ export default {
                 },
             },
             properties: {
-                kek: "path",
+                key: "path",
                 bucket: "folder",
                 mimeType: "type",
                 size: "size",
