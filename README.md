@@ -22,3 +22,13 @@
 
 # Adicionar permisão de acesso ao perfil
     npm install bcryptjs cookie-parser express-session
+
+# Criar seed
+    npx sequelize-cli seed:generate --name create-users
+
+# Criar sedd no BD
+    npx sequelize-cli db:seed:all
+
+
+
+Parou em 4h24m
