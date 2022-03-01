@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ApiClient } from "adminjs";
+import { ApiClient, useTranslation } from "adminjs";
 import { Text, H5 } from "@adminjs/design-system";
 import { Card } from "../styles";
 import { Chart } from "react-google-charts";
@@ -8,6 +8,8 @@ import _ from "lodash";
 const api = new ApiClient();
 
 const makeChartData = (records) => {
+  if (records.length == 0) return;
+
     const status = {
         backlog: "Diária",
         doing: "Semanal",
@@ -23,6 +25,8 @@ const makeChartData = (records) => {
 };
 
 const TaskType = () => {
+    const { translateMessage } = useTranslation();
+
     const [chartData, setChartData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [isEmpty, setIsEmpty] = useState(true);
@@ -45,9 +49,9 @@ const TaskType = () => {
     }
 
     return(
-        <Card as="a" href="#">
+        <Card as="a" href="/admin/resources/tasks">
             <Text textAlign="center">
-                <H5>Título</H5>
+                <H5 mt="lg">{translateMessage("taskTypeCardTitle")}</H5>
                 { isEmpty ? (
                     <Text>Sem tarefas</Text>
                 ) : (
