@@ -14,3 +14,8 @@
 # Criar migrations Upload
     npx sequelize-cli migration:generate --name add-upload-to-task
 
+# Adicionar Google Charts
+    npm install --save react-google-charts
+
+# Lodash, biblioteca de manipulação de dados
+    npm install lodash

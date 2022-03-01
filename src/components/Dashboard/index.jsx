@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { ApiClient, useTranslation } from "adminjs";
 import { Box, H2, Text } from "@adminjs/design-system";
 import TaskType from "./cards/TaskType";
+import TaskEffort from "./cards/TaskEffort";
+
 
 
 const api = new ApiClient();
@@ -42,7 +44,7 @@ const Dashboard = () => {
                 </Box>
 
                 <Box width={[1, 1 / 2, 1 / 2]} p="lg">
-                    <Text>Chart 2</Text>
+                    <TaskEffort />
                 </Box>
             </Box>
         </Box>

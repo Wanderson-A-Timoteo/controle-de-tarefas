@@ -129,7 +129,7 @@ const translations = {
     newPasswordMessage: 'Nova senha "{{newPassword}}" atribuída ao usuário.',
     newPasswordMessageError: 'Erro ao redefinir a senha automaticamente.',
     dashboardTitle: 'Bem-vindo(a) ao Controle de Tarefas',
-    dashboardSubTitle: 'Controle todos seus projetos de uma forma simples',
+    dashboardSubTitle: 'Controle todas as tarefas de seus projetos de uma forma simples',
     taskTypeCardTitle: 'Tipos de Tarefas',
     taskEffortCardTitle: 'Esforço por prazo'
   }
