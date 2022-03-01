@@ -39,8 +39,17 @@ export default {
                 position: 4,
                 isRequired: true,
             },
-            role: {
+            password: {
                 position: 5,
+                isVisible: {
+                    list: false,
+                    filter: false,
+                    show: false,
+                    edit: true
+                },
+            },
+            role: {
+                position: 6,
                 isRequired: true,
                 availableValues: [
                     { value: "admin", label: "Administrador"},
@@ -49,7 +58,7 @@ export default {
                 ],
             },
             status: {
-                position: 6,
+                position: 7,
                 isRequired: true,
                 availableValues: [
                     { value: "active", label: "Ativo"},
@@ -57,15 +66,6 @@ export default {
                 ],
             },
             createdAt: {
-                position: 7,
-                isVisible: {
-                    list: true,
-                    filter: true,
-                    show: true,
-                    edit: false
-                },
-            },
-            updatedAt: {
                 position: 8,
                 isVisible: {
                     list: true,
@@ -74,8 +74,14 @@ export default {
                     edit: false
                 },
             },
-            password: {
-                isVisible: false,
+            updatedAt: {
+                position: 9,
+                isVisible: {
+                    list: true,
+                    filter: true,
+                    show: true,
+                    edit: false
+                },
             },
             password_hash: {
                 isVisible: false,

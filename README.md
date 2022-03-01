@@ -19,3 +19,6 @@
 
 # Lodash, biblioteca de manipulação de dados
     npm install lodash
+
+# Adicionar permisão de acesso ao perfil
+    npm install bcryptjs cookie-parser express-session
