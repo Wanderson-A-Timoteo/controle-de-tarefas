@@ -8,6 +8,7 @@ import UsersResource from './resources/UsersResources';
 import locale from './locales';
 import ProjectResources from "./resources/ProjectsResources";
 import TasksResources from "./resources/TasksResources";
+import theme from "./theme";
 
 AdminJS.registerAdapter(AdminJSSequelize);
 
@@ -20,6 +21,12 @@ const adminJS = new AdminJS({
         component: AdminJS.bundle("./components/Dashboard/index"), // Substitui o dashboard padrão pelo compomente dashboard que criamos
     },
     resources: [UsersResource, ProjectResources, TasksResources],
+    branding: {
+        companyName: 'Controle de Tarefas',
+        logo: false,
+        softwareBrothers: false,
+        theme,
+    },
     ...locale,
 });
 
