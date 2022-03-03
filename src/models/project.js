@@ -7,7 +7,7 @@ class Project extends Model {
         name: Sequelize.STRING,
         description: Sequelize.TEXT,
         status: Sequelize.ENUM('active', 'archived'),
-        user_id: Sequelize.INTEGER,
+        user_id: Sequelize.INTEGER
       },
       {
         sequelize,

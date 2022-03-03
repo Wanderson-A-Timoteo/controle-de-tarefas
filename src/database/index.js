@@ -1,9 +1,9 @@
-import Sequelize from "sequelize";
-import config from "../config/database";
+import { Sequelize } from 'sequelize';
+import config from '../config/database';
 
-import User from "../models/user";
-import Project from "../models/project";
-import Task from "../models/task";
+import User from '../models/user';
+import Project from '../models/project';
+import Task from '../models/task';
 
 const models = [User, Project, Task];
 
@@ -15,12 +15,12 @@ class Database {
   }
 
   init() {
-    models.forEach((model) => model.init(this.connection));
+    models.forEach(model => model.init(this.connection));
   }
 
   associate() {
-    models.forEach((model) => {
-      if(model.associate) {
+    models.forEach(model => {
+      if (model.associate) {
         model.associate(this.connection.models);
       }
     });

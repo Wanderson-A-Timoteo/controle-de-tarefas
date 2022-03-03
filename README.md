@@ -28,7 +28,3 @@
 
 # Criar sedd no BD
     npx sequelize-cli db:seed:all
-
-
-
-Parou em 4h24m

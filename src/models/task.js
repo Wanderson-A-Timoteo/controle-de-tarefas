@@ -15,7 +15,7 @@ class Task extends Model {
           "done",
           "approved",
           "rejected"
-          ),
+        ),
         user_id: Sequelize.INTEGER,
         project_id: Sequelize.INTEGER,
         path: Sequelize.STRING,
@@ -38,7 +38,6 @@ class Task extends Model {
     this.belongsTo(models.User, {
       foreignKey: "user_id",
     });
-
     this.belongsTo(models.Project, {
       foreignKey: "project_id",
     });

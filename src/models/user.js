@@ -5,12 +5,12 @@ class User extends Model {
   static init(sequelize) {
     super.init(
       {
-        initials: {
+        initals: {
           type: Sequelize.VIRTUAL,
           get() {
             const match = this.name.split(" ");
 
-            if(match.length > 1) {
+            if (match.length > 1) {
               return `${match[0][0]}${match[match.length - 1][0]}`;
             } else {
               return match[0][0];
@@ -33,11 +33,11 @@ class User extends Model {
       }
     );
 
-    this.addHook(("beforeSave", async (user) => {
-      if(user.password) {
+    this.addHook('beforeSave', async user => {
+      if (user.password) {
         user.password_hash = await createPasswordHash(user.password);
       }
-    }));
+    });
   }
 
   static associate(models) {
@@ -45,7 +45,7 @@ class User extends Model {
     this.hasMany(models.Task);
   }
 
-  checkPassword(password){
+  checkPassword(password) {
     return checkPassword(this, password);
   }
 }

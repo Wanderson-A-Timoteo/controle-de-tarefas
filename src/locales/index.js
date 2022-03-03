@@ -2,7 +2,7 @@ import labels from "./labels";
 import resources from "./resources";
 
 const commonProps = {
-  status: 'Prazo de entrega',
+  status: 'Situação',
   createdAt: 'Criação',
   updatedAt: 'Atualização'
 };
@@ -119,7 +119,7 @@ const translations = {
     noRecordsInResource: 'Não existem registros para esse recurso',
     noRecords: 'Sem registros',
     confirmDelete: 'Você tem certeza que deseja remover esse registro?',
-    loginWelcome: 'Sistema de gerenciamento de tarefas',
+    loginWelcome: 'Sistema de controle de tarefas',
     email: 'Email',
     password: 'Senha',
     login: 'Entrar',
