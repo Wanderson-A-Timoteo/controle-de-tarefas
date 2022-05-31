@@ -52,6 +52,14 @@ O perfil Supervisor não tem acesso para cadastrar editar ou deletar usuários, 
 
 <br>
 
+### Gif do Sistema Funcionando
+
+<p align="center">
+    <img alt="Imagem da Tela de Login" title="Tela de Login" 
+    src=".github/controle-de-tarefas.gif" />
+</p>
+<br>
+
 ### Desktop - Tela de Login
 
 <p align="center">
