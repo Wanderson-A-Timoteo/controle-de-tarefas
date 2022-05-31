@@ -22,7 +22,7 @@
 
 ## 💻 Projeto
 
-O sistema consiste em um Gerenciamento de Projetos e Tarefas, onde poderá ser criado vários projetos com suas tarefas e atribuí-las a um coloborador específico ou para vários colaboradores. Também tem armazenamento de arquivos em nuvem na Amazon S3.<br>
+O sistema consiste em um Gerenciamento de Projetos e Tarefas, onde poderá ser criado vários projetos com suas tarefas e atribuí-las a um colaborador específico ou para vários colaboradores. Também tem armazenamento de arquivos em nuvem na Amazon S3.<br>
 <br>
 O sistema possui 3 perfis de acesso, sendo Administrador, Supervisor e Operador, cada um com níveis de acesso diferentes, por exemplo, o perfil Administrador pode realizar todas os operações disponíveis:
 
