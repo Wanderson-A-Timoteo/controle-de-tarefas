@@ -33,7 +33,7 @@
   },
   "scripts": {
     "dev": "nodemon ./src/server.js",
-    "start": "nodemon .src/server.js",
+    "start": "node .src/server.js",
     "db:migrate": "sequelize-cli db:migrate",
     "db:undo": "sequelize-cli db:migrate:undo"
   }
