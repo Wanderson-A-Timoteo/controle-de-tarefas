@@ -90,7 +90,7 @@ O perfil Supervisor não tem acesso para cadastrar editar ou deletar usuários, 
 
 <p align="center">
     <img alt="Imagem do Modelo Entidade Relacional" title="Tela de Agradecimento" 
-    src=".github/modelo-entidade-relacional-MER.PNG" />
+    src=".github/modelo-entidade-relacional-MER.png" />
 </p>
 
 ## 🚀 Tecnologias
